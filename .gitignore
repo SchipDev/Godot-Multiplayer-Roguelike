@@ -1,0 +1,14 @@
+# Godot 4+ specific ignores
+.godot/
+/android/
+
+# Godot-specific files
+.import/
+*.godot_import
+*.stex
+*.msh
+*.res
+*.mono/
+
+# Godot temporary and cache files
+.cache/
