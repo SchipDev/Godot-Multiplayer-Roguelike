@@ -12,3 +12,5 @@
 
 # Godot temporary and cache files
 .cache/
+*.tmp
+*.import
