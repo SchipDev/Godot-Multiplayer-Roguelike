@@ -1,8 +1,9 @@
-[gd_scene load_steps=6 format=3 uid="uid://b78s35jvtkhaw"]
+[gd_scene load_steps=7 format=3 uid="uid://b78s35jvtkhaw"]
 
 [ext_resource type="Script" uid="uid://4nj0cnv0b45w" path="res://player/player.gd" id="1_rkbax"]
 [ext_resource type="Texture2D" uid="uid://jsmjkcxwdg8r" path="res://player/player.png" id="2_g1dw6"]
 [ext_resource type="Texture2D" uid="uid://cr6s6uq7a6fi2" path="res://player/gun.png" id="3_g1dw6"]
+[ext_resource type="AudioStream" uid="uid://bsjbc6n7oja10" path="res://player/Futuristic Assault Rifle Single Shot 01.wav" id="4_yw30f"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_yw30f"]
 size = Vector2(8, 8)
@@ -38,3 +39,6 @@ texture = ExtResource("3_g1dw6")
 
 [node name="ProjectileSpawnPoint" type="Marker2D" parent="GunContainer/GunSprite"]
 position = Vector2(3, 0)
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="GunContainer"]
+stream = ExtResource("4_yw30f")

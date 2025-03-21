@@ -51,6 +51,8 @@ func _physics_process(delta: float) -> void:
 @rpc("call_local")
 func shoot(shooter_pid):
 	var bullet = BULLET.instantiate()
+	# Play sound effect for shooting
+	$GunContainer/AudioStreamPlayer2D.play()
 	bullet.set_multiplayer_authority(shooter_pid)
 	get_parent().add_child(bullet)
 	bullet.transform = $GunContainer/GunSprite/ProjectileSpawnPoint.global_transform
